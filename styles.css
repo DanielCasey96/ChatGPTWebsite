@@ -12,21 +12,41 @@ body, h1, h2, p, ul, li {
   }
   
   header {
-    background-color: #f2f2f2;
-    padding: 20px;
+    background-image: url('images/header_background.png');
+    background-size: cover; /* Adjust the background size property as needed */
+    background-position: center; /* Adjust the background position property as needed */
+    padding: 120px;
+    position: relative;
   }
+
+  .page-header-overlay-text {
+    position: absolute;
+    top: 50%; /* Adjust as needed to vertically center the text */
+    left: 50%; /* Adjust as needed to horizontally center the text */
+    transform: translate(-50%, -50%);
+    color: #000000; /* Adjust the color as needed */
+    font-size: 64px; /* Adjust the font size as needed */
+    z-index: 1; /* Ensure the text appears above the image */
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    line-height: 1.2;
+    }
   
   nav ul {
     list-style-type: none;
+    padding: 20px;
+    text-align: left;
   }
   
   nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 20px;
   }
   
   nav ul li a {
-    padding-left: 10px;
+    padding-left: 20px;
     text-decoration: none;
     color: #333;
   }
@@ -41,6 +61,19 @@ body, h1, h2, p, ul, li {
     padding: 20px;
     text-align: center;
   }
+  
+/* Contact Page */
+section ul {
+  list-style-type: none;
+}
+
+section ul li {
+  margin-bottom: 10px;
+}
+
+section ul li::before {
+  content: "";
+}
 
   /* Header Styles */
   header h1 {
@@ -70,6 +103,18 @@ body, h1, h2, p, ul, li {
     color: #fff;
     text-decoration: none;
     margin: 5px;
+  }
+
+  .purpose-header {
+    margin-top: 20px;
+    margin-left: 100px;
+    text-align: left;
+  }
+
+  .purpose-body {
+    margin-top: 20px;
+    margin-left: 80px;
+    text-align: left;
   }
   
   .button-container {
