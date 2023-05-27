@@ -8,6 +8,7 @@ body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
     text-align: center; /* Center align all elements */
+    font-size: 22px;
   }
   
   /* Basic styles */
@@ -25,6 +26,12 @@ body, h1, h2, p, ul, li {
   }
 
   .page-header-overlay-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 800px;
     position: absolute;
     top: 50%; /* Adjust as needed to vertically center the text */
     left: 50%; /* Adjust as needed to horizontally center the text */
@@ -35,11 +42,15 @@ body, h1, h2, p, ul, li {
     text-align: center;
     padding: 0;
     box-sizing: border-box;
-    margin: 0;
     line-height: 1.2;
     }
   
   nav ul {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 0 auto;
+    max-width: 1400px;
     list-style-type: none;
     padding: 20px;
     text-align: left;
@@ -62,7 +73,10 @@ body, h1, h2, p, ul, li {
 
   #navigation-tree {
     display: flex;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
+    margin: 0 auto;
+    max-width: 1400px;
     margin-bottom: 10px;
   }
   
@@ -222,7 +236,11 @@ section ul li::before {
   /* css for gpt website content */
 
   #chatgpt-blog-content {
-    margin: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
     padding: 10px;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
@@ -234,22 +252,20 @@ section ul li::before {
     margin: 40px;
     padding: 10px;
     margin-top: -20px;
+    font-size: 35px;
   }
 
   #chatgpt-blog-content h2{
     padding: 10px;
     text-align: left;
-  }
-
-  #chatgpt-blog-content p {
-    padding: 10px;
-    text-align: left;
+    font-size: 30px;
   }
 
   #chatgpt-blog-content li {
     text-align: left;
     list-style-type: disc;
     margin-left: 60px;
+    font-size: 22px;
   }
 
   #chatgpt-blog-content blockquote {
@@ -258,6 +274,7 @@ section ul li::before {
     list-style-type: disc;
     margin-left: 60px;
     margin-top: 10px;
+    font-size: 22px;
   }
 
   #chatgpt-blog-content footerQuote {
@@ -268,8 +285,10 @@ section ul li::before {
   }
 
   #chatgpt-blog-content p {
+    padding: 10px;
     text-align: left;
     list-style-type: disc;
     margin-top: -20px;
+    font-size: 22px;
   }
   
