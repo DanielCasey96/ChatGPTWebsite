@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Futura PT";
+  src: url("FuturaPT/FuturaPTMedium.otf");
+}
+
 /* Reset some default styles */
 body, h1, h2, p, ul, li {
     margin: 0;
@@ -7,12 +12,12 @@ body, h1, h2, p, ul, li {
   
   /* Basic styles */
   body {
-    font-family: Arial, sans-serif;
+    font-family: "Futura PT", Arial, sans-serif;
     line-height: 1.6;
   }
   
   header {
-    background-image: url('images/header_background.png');
+    background-image: url('images/cool-background.png');
     background-size: cover; /* Adjust the background size property as needed */
     background-position: center; /* Adjust the background position property as needed */
     padding: 120px;
@@ -96,25 +101,44 @@ section ul li::before {
     margin-top: 20px;
   }
 
+  /* Additional Buttons space */
   .main-button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-align: center;
     text-decoration: none;
-    margin: 5px;
+    background-color: #488ed8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    height: 60px;
+    line-height:60px;
+  }
+
+  .main-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .main-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .purpose-header {
     margin-top: 20px;
-    margin-left: 100px;
-    text-align: left;
+    text-align: centre;
   }
 
   .purpose-body {
-    margin-top: 20px;
-    margin-left: 80px;
     text-align: left;
+    margin-left: 25%;
+    margin-right: 25%;
   }
   
   .button-container {
@@ -133,5 +157,38 @@ section ul li::before {
 
   .most-recent-post {
     text-align: center;
-    margin-top: 20px;
+  }
+
+  .most-recent-post-link {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 500px;
+    height: 60px;
+    line-height:60px;
+  }
+
+  .most-recent-post-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .most-recent-post-link:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .ChatGPT-logo {
+    position: absolute;
+    top: 320;
+    left: 200;
+    
   }
