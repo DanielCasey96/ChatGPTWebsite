@@ -63,6 +63,7 @@ body, h1, h2, p, ul, li {
   #navigation-tree {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
   }
   
   #navigation-tree ul {
@@ -216,5 +217,59 @@ section ul li::before {
     justify-items: center;
     align-items: center;
     margin-top: 30px;
+  }
+
+  /* css for gpt website content */
+
+  #chatgpt-blog-content {
+    margin: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-top: -10px;
+    text-align: left;
+  }
+
+  #chatgpt-blog-content h1{
+    margin: 40px;
+    padding: 10px;
+    margin-top: -20px;
+  }
+
+  #chatgpt-blog-content h2{
+    padding: 10px;
+    text-align: left;
+  }
+
+  #chatgpt-blog-content p {
+    padding: 10px;
+    text-align: left;
+  }
+
+  #chatgpt-blog-content li {
+    text-align: left;
+    list-style-type: disc;
+    margin-left: 60px;
+  }
+
+  #chatgpt-blog-content blockquote {
+    text-align: left;
+    font-weight: bold;
+    list-style-type: disc;
+    margin-left: 60px;
+    margin-top: 10px;
+  }
+
+  #chatgpt-blog-content footerQuote {
+    text-align: left;
+    list-style-type: disc;
+    margin-left: 60px;
+    margin-top: -20px;
+  }
+
+  #chatgpt-blog-content p {
+    text-align: left;
+    list-style-type: disc;
+    margin-top: -20px;
   }
   
