@@ -47,18 +47,81 @@
     <p>I thought it would be enought to essentially be given the entirely of the code, but it gave me instructions on how to create a new page instead. Combining this with a follow up asking for basic html for that page meant I went from having no idea to having it done in about 30 seconds. <br>
        This general process continued till i had a header image, a few pages and buttons that do things when you hover over them.</p>     
     <h2>The Navigation Tree Incident</h2>
-    
-    
-    
-    
-    <img src="images/image1.jpg" alt="Image 1">
-    
-    <p>Sed ac augue sit amet mauris ullamcorper iaculis nec id justo. Nulla consectetur, ligula id aliquam bibendum, justo ex hendrerit nisi, ut pellentesque orci ex id nunc. Vestibulum interdum, nulla et dapibus dignissim, neque tellus lobortis odio, eget convallis massa velit at metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-    
-    <img src="images/image2.jpg" alt="Image 2">
-    
-    <p>Donec vitae faucibus elit. Cras finibus lacus in velit scelerisque, vel lobortis urna hendrerit. In laoreet, ipsum sit amet tincidunt pellentesque, dolor erat venenatis justo, id egestas purus est et felis. Sed eu dui eget lacus vulputate gravida. Quisque dapibus dui ut lacinia ultrices. Ut sed ultrices ex.</p>
-  </section>
+    <p>Up till this point I was riding pretty high, id created a decent amount and felt confident that anything i wanted to do i could. And then I decided I wanted to show a navigation tree...</p>
+    <p>Something like this:</p>
+    <img src="../../images/good-navigation-tree.png" alt="good navigation tree" style="width: 400px; height: auto; margin-left: 60px;">
+    <p>So i wrote my first prompt</p>
+    <blockquote>"actually ill come back to this, as ive created a new html page from this button, the user could be confused of where they are in the website, id like to start making a navigation tree and have it displayed on the webpage, here i would like this new page to sit under a blogs category
+      And lets also add this blogs space to the navigation bar"</blockquote>
+    <p>I got some html i got some css, i got this:</p>
+    <img src="../../images/bad-navigation-tree-2.png" alt="bad navigation tree" style="width: 400px; height: auto; margin-left: 60px;">
+    <p>Ok not what i wanted, lets try to nail it down a bit more</p>
+    <blockquote>"i want the tree to be left aligned and also look like this <br>
+      blogs> Website creation with chatGPT"</blockquote>
+    <p>It gave me some updates and told me "the navigation tree will be left-aligned, and the "Blogs" category will have a dropdown menu containing the specific blog post link."<br>
+       It was not left aligned. So i knew it was going to be a bit of a process to get to what i wanted, i wont show all the back and forth but these are the commands i tried:</p>
+    <blockquote>"it still isnt left aligned, or looking like a path <br>
+      blogs>chatGpt"</blockquote>
+    <blockquote>"lets restart this <br>
 
+      i have html code of <br>
+      paste of code <br>
+      Where i want to make a nagivation tree displayed on screen on the left side in the form <br>
+      parent>child <br>
+      where parent is the blogs page, and the child is the current page of website-creation.html <br>
+      my css file is<br>
+      paste of code <br>
+      the webpage does not show what i want it to show </blockquote>
+
+    <blockquote>"nope i just have a hyperlink of blog sitting in the middle of the screen<br>
+      i want it to be on the left in a format <br>
+      blogs>website Creation <br>
+      look how this website does it at the top with <br>
+      home > Cool Backgrounds <br>
+      https://coolbackgrounds.io/ "</blockquote>  
+
+    <blockquote>"ok, both text elements are there now the blog and the website creation <br>
+      but they are still in the middle of the screen one under the other, i do not want this i want it on the left of the screen as <br>
+      blog > website creation"</blockquote>  
+    
+    <blockquote>"ok, its now left aligned but still in this format <br>
+      blogs <br>
+      website creation <br>
+      i want it to be <br>
+      blogs > website creation"</blockquote>  
+    
+    <blockquote>"i want you to show me visually you understand the concept of what we are trying to get to"</blockquote>  
+
+    <blockquote>"no we've gone backwards again now its just the word blogs in the middle of the screen"</blockquote>
+
+    <blockquote>"stop writing code, it isnt correct <br>
+      i want you to show me an image of a website, where it has a navigation tree of the format <br>
+      home > other page"</blockquote>
+
+    <blockquote>"ok you understand the concept of child pages i simply want to display this visually by having parent page followed by the character > followed by the child page </blockquote>  
+    
+    <p>So how did I finally get it to work, what was the magic combination of letters and words that allowed me to finally achieve what you can see at the top of this page?</p>
+    <blockquote>"no <br>
+      go to this website <br>
+       https://coolbackgrounds.io/ <br>
+      at the top you can see the page tree is shown as <br>
+          Home › Cool Backgrounds <br>
+      do you understand this visual representation of the parent, child pages?</blockquote>
+
+    <p>I then go the css and html for it to work.</p>  
+    <p>Sounds like a me problem? <br>
+       For sure, if you ask the right questions you will get the right answers, but this is an early stage of creating a website, and already ive had a massive issue due my lack of knowledge, most people likely dont know the term navigation tree, or parent and child in this regard, i later found out this is called a breadcrumb trail.<br>
+      I asked:</p>
+    <blockquote>"write me html and css for adding a bradcrumb trail"</blockquote>  
+    <p>And this is what i got:</p>
+    <img src="../../images/bredcrumb.png" alt="breadcrumb" style="width: 400px; height: auto; margin-left: 60px;">
+    <p>Hmmm, looks almost exactly like what I wanted.</p>
+    <h2>Summary</h2>
+    <p>You've probably seen those posts on LinkedIn, "the 10 AI tools you need to learn now to not fall behind", "If you arent using ChatGPT everyone will pass you".<Br>
+       Has it been useful, sure. Are there probably a lot of things I could do with it that i havnt even thought of, of course. But currently, i dont feel anyone is going to be hired because they can prompt ChatGPT well, nothing done here couldnt have been done by an experienced engineer in far less time, or by watching the right youtube video. Further to this, when you get to the complex problems, the massive repos of hundreds of files and hundreds of thousends of lines of code, you cant just paste them in to the text box like I did and say "tell me what the issue is". <br>
+       The real reason i used ChatGPT for this is becuase when i tried to search for this on youtube the only videos i got were about why i should make a website, and which free vs paid builder sites i can use. ChatGPT is what you imagine Google is before you actually press seach and get 17 advertisments, and the entire front page being tailored by companies who have precisely and explicitly defined their content expressly to hit the first page for what youve searched. I didnt want to use one of these sites but it does allow a great segway to todays sponsor, Squarespace.com, wait, im not sponsored. But with more ease you could create the same thing that would look much better.<Br>
+       So what are your goals? If its to do something specific like making a website, thousends of people have already thought of the best way to make you do the least work to achieve that, but if its to learn how to do it, ChatGPT has been pretty good. I didnt put all the interactions as this is long enough as it is, but frequently if i have a problem it would give multiple suggestions of how to fix, if I wanted to do somethign it would give me multiple ways to achieve it.<br>
+       Dont become reliant on it, but learn how it works and get the most out of it.</p>
+ </section>
 </body>
 </html>
