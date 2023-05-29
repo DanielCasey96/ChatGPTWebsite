@@ -244,7 +244,6 @@ section ul li::before {
     padding: 10px;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
-    margin-top: -10px;
     text-align: left;
   }
 
@@ -274,7 +273,15 @@ section ul li::before {
     list-style-type: disc;
     margin-left: 60px;
     margin-top: 10px;
-    font-size: 22px;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  #chatgpt-blog-content blockquote em {
+    font-style: italic;
+    font-weight: lighter;
   }
 
   #chatgpt-blog-content footerQuote {
@@ -291,4 +298,60 @@ section ul li::before {
     margin-top: -20px;
     font-size: 22px;
   }
+  /* end of chatgpt content block */
+
+ /* tldr button */
+ #expandBtn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  color:rgb(173, 173, 173)
+
+}
+
+#expandContent {
+  display: none; /* Hide the content by default */
+  padding: 30px;
+  border: 1px solid #797979;
+  background-color: none;
+  text-align: left;
+}
+
+#contentContainer {
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin: 0 auto;
+  max-width: 1620px;
+  background-color: #eeeeeee8;
+  margin-top: 20px;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 20px;
+  overflow: hidden; /* Prevent expanded content from pushing other elements */
+}
+
+#expandContent.expanded {
+  max-height: 500px; /* Set the desired expanded height */
+  transition: max-height 0.3s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+#expandContent h2 {
+  text-align: left;
+  font-size: 30px;
+}
+
+#expandContent p {
+  text-align: left;
+}
+  /* end of tldr button */
   
