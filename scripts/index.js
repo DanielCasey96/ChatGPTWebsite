@@ -13,3 +13,17 @@ fetch('chatGPTText.txt')
   // Insert the content into the element with the specified ID
   document.getElementById('chatGPTText').innerHTML = data;
 });
+
+function showDialog(dialogId) {
+  var dialog = document.getElementById(dialogId);
+  if (dialog) {
+    dialog.style.display = 'block';
+  }
+}
+
+function closeDialog(dialogId) {
+  var dialog = document.getElementById(dialogId);
+  if (dialog) {
+    dialog.style.display = 'none';
+  }
+}

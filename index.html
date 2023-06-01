@@ -31,14 +31,39 @@
     </section>
     
 
-  <section>
-    <h2 class="section-heading">My Favourites</h2>
-    <div class="button-container">
-      <a href="#" class="main-button">Facial recognition Magic Mirror</a>
-      <a href="#" class="main-button">Creating a Home Server</a>
-      <a href="#" class="main-button">Computing Keplar Data to find Exoplanets</a>
+    <section>
+      <h2 class="section-heading">My Favourites</h2>
+      <div class="button-container">
+        <a href="#" class="main-button" onclick="showDialog('facial-recognition-dialog')">Facial recognition Magic Mirror</a>
+        <a href="#" class="main-button" onclick="showDialog('home-server-dialog')">Creating a Home Server</a>
+        <a href="#" class="main-button" onclick="showDialog('keplar-data-dialog')">Computing Keplar Data to find Exoplanets</a>
+      </div>
+    </section>
+    
+    <div id="facial-recognition-dialog" class="dialog">
+      <div class="dialog-content">
+        <h2>Facial recognition Magic Mirror</h2>
+        <p>Ok so i havnt actually written this yet, but thanks for the interest.</p>
+        <button class="close-button" onclick="closeDialog('facial-recognition-dialog')">Close</button>
+      </div>
     </div>
-  </section>
+    
+    <div id="home-server-dialog" class="dialog">
+      <div class="dialog-content">
+        <h2>Creating a Home Server</h2>
+        <p>Ok so i havnt actually written this yet, but thanks for the interest.</p>
+        <button class="close-button" onclick="closeDialog('home-server-dialog')">Close</button>
+      </div>
+    </div>
+    
+    <div id="keplar-data-dialog" class="dialog">
+      <div class="dialog-content">
+        <h2>Computing Keplar Data to find Exoplanets</h2>
+        <p>Ok so i havnt actually written this yet, but thanks for the interest.</p>
+        <button class="close-button" onclick="closeDialog('keplar-data-dialog')">Close</button>
+      </div>
+    </div>
+    
 
   <section>
     <h2 class="purpose-header">Purpose of this Website</h2>

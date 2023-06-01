@@ -140,6 +140,34 @@ section ul li::before {
   }
 
   /* Additional Buttons space */
+  .dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  .dialog-content {
+    background-color: #dddddd;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #999999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }  
+  
+  .dialog-content h2 {
+    margin-top: 0;
+  }
+  
+  .close-button {
+    margin-top: 20px;
+  }  
+  /* end of popup */
+  
   .main-button {
     display: inline-block;
     padding: 12px 24px;
