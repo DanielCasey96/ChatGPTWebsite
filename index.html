@@ -4,8 +4,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Futura+PT&display=swap" rel="stylesheet">
   <title>My Website</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="popup.css">
 </head>
 <body>
+  <div id="popup" class="popup">
+    <span id="close-btn">&times;</span>
+    <h2>Mobile Alert</h2>
+    <p>You are using a mobile device. Your experience may be impacted</p>
+  </div>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var isMobile = window.matchMedia('(max-width: 768px)').matches;
+  
+      if (isMobile) {
+        var popup = document.getElementById('popup');
+        popup.style.display = 'block';
+      }
+      
+      var closeBtn = document.getElementById('close-btn');
+      closeBtn.addEventListener('click', function() {
+        popup.style.display = 'none';
+      });
+    });
+  </script>
+  
+  
   <nav>
     <ul>
       <li><a href="index.html" id="navigation-button">Home</a></li>
@@ -75,6 +98,7 @@
 </main>
 
 <script src="scripts/index.js"></script>
+<script src="scripts/popup.js"></script>
 </body>
 
 <footer>

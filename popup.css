@@ -1,0 +1,22 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 30%; /* Adjust the top position as per your requirement */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Adjust the width as per your requirement */
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
